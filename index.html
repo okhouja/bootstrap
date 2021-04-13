@@ -1,272 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/bootstrap.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./css/bootstrap.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
     <title>Design with Bootstrap</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">BT Transmitter</a>
         <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarColor02"
-          aria-controls="navbarColor02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarColor02"
+                aria-controls="navbarColor02"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarColor02">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input
-              class="form-control mr-sm-2"
-              type="text"
-              placeholder="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"
+                    >Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input
+                        class="form-control mr-sm-2"
+                        type="text"
+                        placeholder="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                    Search
+                </button>
+            </form>
         </div>
-      </nav>
-    </header>
-
-    <main>
-      <div class="jumbotron">
+    </nav>
+</header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url('img/BT_2_in_1.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>First Macbook</h3>
+                    <p>This is a description for the first slide.</p>
+                </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('img/BT_Reciever1_.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Second Macbook</h3>
+                    <p>This is a description for the second slide.</p>
+                </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('img/BT_Sender1_.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Third Macbook</h3>
+                    <p>This is a description for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+<main>
+    <div class="jumbotron">
         <h1 class="display-3">Bluetooth Sender & Receiver</h1>
         <p class="lead">
-          Here you can find your information about bluetooth Devices: A
-          Bluetooth transmitter is an interface extension for a
-          non-Bluetooth-enabled audio device. It enables older devices such as a
-          stereo system or a TV to be connected to Bluetooth-enabled devices
-          such as headphones or speakers
+            Here you can find your information about bluetooth Devices: A
+            Bluetooth transmitter is an interface extension for a
+            non-Bluetooth-enabled audio device. It enables older devices such as a
+            stereo system or a TV to be connected to Bluetooth-enabled devices
+            such as headphones or speakers
         </p>
-        <hr class="my-4" />
+        <hr class="my-4"/>
         <p>
-          A Bluetooth audio receiver transforms a hi-fi system or any active
-          loudspeaker into a wireless sound system that can be supplied with
-          music from a smartphone, tablet or PC.
+            A Bluetooth audio receiver transforms a hi-fi system or any active
+            loudspeaker into a wireless sound system that can be supplied with
+            music from a smartphone, tablet or PC.
         </p>
         <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button"
+            <a class="btn btn-primary btn-lg" href="#" role="button"
             >Learn more</a
-          >
+            >
         </p>
-      </div>
-    </main>
-    <article>
-      <div class="container marketing">
+    </div>
+</main>
+<article>
+    <div class="container marketing">
         <div class="row">
-          <div class="col-lg-4">
-
-
-            <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
-                <div class="card-header">BT Sender</div>
-                <div class="card-body">
-                  <h4 class="card-title">Devices Send blutooth signal</h4>
-                  <p class="card-text"> Devices Send blutooth signal to your Headset or portable musicbox.</p>
+            <div class="col-md-4">
+                <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+                    <div class="card-header">BT Sender</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Devices Send blutooth signal</h4>
+                        <p class="card-text"> Devices Send blutooth signal to your Headset or portable musicbox.</p>
+                    </div>
                 </div>
-
-            <!-- <svg
-              class="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 140x140"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg> -->
-
-            <!-- <h2>BT Sender</h2>
-            <p>
-              Devices Send blutooth signal to your Headset or portable musicbox -->
-            <!-- </p>
-            <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
-            </p> -->
-          </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-13">
-         
-            <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
-                <div class="card-header">BT Receiver</div>
-                <div class="card-body">
-                  <h4 class="card-title">Devices Receive blutooth signal</h4>
-                  <p class="card-text"> Devices Receive blutooth signal from your Mobile or Computer or
-                    any bluetooth sender.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+                    <div class="card-header">BT Sender</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Devices Send blutooth signal</h4>
+                        <p class="card-text"> Devices Send blutooth signal to your Headset or portable musicbox.</p>
+                    </div>
                 </div>
-            <!-- <h2>BT Receiver</h2>
-            <p>
-              Devices Receive blutooth signal from your Mobile or Computer or
-              any bluetooth sender
-            </p>
-            <p> -->
-              <!-- <a class="btn btn-secondary" href="#">View details &raquo;</a>
-            </p> -->
-          </div>
-          <div class="col-lg-14">
-            <!-- <svg
-              class="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 140x140"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg> -->
-
-            <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
-                <div class="card-header">2-in-1,Transmitter and Receiver</div>
-                <div class="card-body">
-                  <h4 class="card-title">Devices Receive and send blutooth signal</h4>
-                  <p class="card-text"> Devices you can send or receive bluetooth signal.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+                    <div class="card-header">BT Sender</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Devices Send blutooth signal</h4>
+                        <p class="card-text"> Devices Send blutooth signal to your Headset or portable musicbox.</p>
+                    </div>
                 </div>
-
-
-
-            <!-- <h2>2-in-1,Transmitter and Receiver</h2>
-            <p>you can send or receive bluetooth signal</p>
-            <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
-            </p> -->
-          </div>
+            </div>
         </div>
-
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">
-              Avantree Orbit Bluetooth 5.0 Audio Transmitter Sender für TV mit
-              LCD Anzeige, Zwei Integrierten Antennen, aptX Low Latency, .
-              <span class="text-muted"
-                >Funktioniert mit Netflix & Prime, Für Alle TVs, unterstützt 2
-                Kopfhörer.</span
-              >
-            </h2>
-            <p class="lead">
-              [Ideal zum Fernsehen / Filme schauen] Mit der aptX Low
-              Latency-Technologie reduziert der Orbit die Verzögerung und stellt
-              sicher, dass Ihr Audio perfekt mit Ihrem Fernseher synchronisiert
-              ist. Genießen Sie Ihre Fernsehprogramme ohne Audioverzögerung oder
-              Lippensynchronisationsfehler. Kombinieren Sie es mit Ihrem
-              Lieblingskopfhörer, der auch mit der aptX Low Latency-Technologie
-              ausgestattet ist.
-            </p>
-          </div>
-          <div class="col-md-5">
-            <img featurette-image img-fluid mx-auto" width="500" height="500"
-            src="./img/BT_Sender1_.jpg" alt="" />
-          </div>
-        </div>
-
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">
-              Logitech Kabelloser Bluetooth Audio-Empfänger, Multipoint
-              Bluetooth
-              <span class="text-muted"
-                >3,5 mm & Cinch-Eingang, Pairing-Taste, 15 m Reichweite, EU
-                Stecker, PC/Mac/Tablet/Handy/AV-Receiver/Stereoanlage.</span
-              >
-            </h2>
-            <p class="lead">
-              Multipoint Bluetooth technology: Pair your smartphone and tablet
-              at the same time and stream audio content in stereo quality from
-              one or the other device
-            </p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              src="./img/BT_Reciever1_.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">
-              FeinTech ABT00102 Bluetooth 5.0 Audio Sender Empfänger aptX HD Low
-              Latency
-              <span class="text-muted"> Toslink SPDIF Bypass Konverter.</span>
-            </h2>
-            <p class="lead">
-              Bluetooth 5.0 Adapter, Funktion als Audio Transmitter, Receiver
-              oder Konverter einstellbar, je 2 Eingänge und Ausgänge 3.5 mm
-              Klinke analog und SPDIF Toslink digital
-            </p>
-          </div>
-          <div class="col-md-5">
-            <img
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              src="./img/BT_2_in_1.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-
-        <hr class="featurette-divider" />
-      </div>
-
-      <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>
-          &copy; 2017–2021 Company, Inc. &middot;
-          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
-        </p>
-      </footer>
-    </article>
-
-    <script src="./js/jquery.min.js"></script>
-
-    <script src="./js/bootstrap.bundle.js"></script>
-
-    <script src="./js/custom.js"></script>
-  </body>
+    </div>
+    <!-- <svg
+      class="bd-placeholder-img rounded-circle"
+      width="140"
+      height="140"
+      xmlns="http://www.w3.org/2000/svg"
+      role="img"
+      aria-label="Placeholder: 140x140"
+      preserveAspectRatio="xMidYMid slice"
+      focusable="false"
+    >
+      <title>Placeholder</title>
+      <rect width="100%" height="100%" fill="#777" />
+      <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+    </svg> -->
+    <!-- <h2>BT Sender</h2>
+    <p>
+      Devices Send blutooth signal to your Headset or portable musicbox -->
+    <!-- </p>
+    <p>
+      <a class="btn btn-secondary" href="#">View details &raquo;</a>
+    </p> -->
+    <!-- /.col-lg-4 -->
+    <!-- <h2>BT Receiver</h2>
+    <p>
+      Devices Receive blutooth signal from your Mobile or Computer or
+      any bluetooth sender
+    </p>
+    <p> -->
+    <!-- <a class="btn btn-secondary" href="#">View details &raquo;</a>
+  </p> -->
+    <!--                    </div>-->
+    <!--                    <div class="col-md-4">-->
+    <!-- <svg
+      class="bd-placeholder-img rounded-circle"
+      width="140"
+      height="140"
+      xmlns="http://www.w3.org/2000/svg"
+      role="img"
+      aria-label="Placeholder: 140x140"
+      preserveAspectRatio="xMidYMid slice"
+      focusable="false"
+    >
+      <title>Placeholder</title>
+      <rect width="100%" height="100%" fill="#777" />
+      <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+    </svg> -->
+    <!--                        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">-->
+    <!--                            <div class="card-header">2-in-1,Transmitter and Receiver</div>-->
+    <!--                            <div class="card-body">-->
+    <!--                                <h4 class="card-title">Devices Receive and send blutooth signal</h4>-->
+    <!--                                <p class="card-text"> Devices you can send or receive bluetooth signal.</p>-->
+    <!--                            </div>-->
+    <!--                            &lt;!&ndash; <h2>2-in-1,Transmitter and Receiver</h2>-->
+    <!--                            <p>you can send or receive bluetooth signal</p>-->
+    <!--                            <p>-->
+    <!--                              <a class="btn btn-secondary" href="#">View details &raquo;</a>-->
+    <!--                            </p> &ndash;&gt;-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+                        <hr class="featurette-divider"/>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">
+                                    Avantree Orbit Bluetooth 5.0 Audio Transmitter Sender für TV mit
+                                    LCD Anzeige, Zwei Integrierten Antennen, aptX Low Latency, .
+                                    <span class="text-muted"
+                                    >Funktioniert mit Netflix & Prime, Für Alle TVs, unterstützt 2
+                    Kopfhörer.</span
+                                    >
+                                </h2>
+                                <p class="lead">
+                                    [Ideal zum Fernsehen / Filme schauen] Mit der aptX Low
+                                    Latency-Technologie reduziert der Orbit die Verzögerung und stellt
+                                    sicher, dass Ihr Audio perfekt mit Ihrem Fernseher synchronisiert
+                                    ist. Genießen Sie Ihre Fernsehprogramme ohne Audioverzögerung oder
+                                    Lippensynchronisationsfehler. Kombinieren Sie es mit Ihrem
+                                    Lieblingskopfhörer, der auch mit der aptX Low Latency-Technologie
+                                    ausgestattet ist.
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                            <img class="featurette-image img-fluid mx-auto" style="width:500px; height:500px;"
+                                src="./img/BT_Sender1_.jpg" alt="" />
+                            </div>
+                        </div>
+                        <hr class="featurette-divider"/>
+                        <div class="row featurette">
+                            <div class="col-md-7 order-md-2">
+                                <h2 class="featurette-heading">
+                                    Logitech Kabelloser Bluetooth Audio-Empfänger, Multipoint
+                                    Bluetooth
+                                    <span class="text-muted"
+                                    >3,5 mm & Cinch-Eingang, Pairing-Taste, 15 m Reichweite, EU
+                    Stecker, PC/Mac/Tablet/Handy/AV-Receiver/Stereoanlage.</span
+                                    >
+                                </h2>
+                                <p class="lead">
+                                    Multipoint Bluetooth technology: Pair your smartphone and tablet
+                                    at the same time and stream audio content in stereo quality from
+                                    one or the other device
+                                </p>
+                            </div>
+                            <div class="col-md-5 order-md-1">
+                                <img
+                                        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                                        width="500"
+                                        height="500"
+                                        src="./img/BT_Reciever1_.jpg"
+                                        alt=""
+                                />
+                            </div>
+                        </div>
+                        <hr class="featurette-divider"/>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">
+                                    FeinTech ABT00102 Bluetooth 5.0 Audio Sender Empfänger aptX HD Low
+                                    Latency
+                                    <span class="text-muted"> Toslink SPDIF Bypass Konverter.</span>
+                                </h2>
+                                <p class="lead">
+                                    Bluetooth 5.0 Adapter, Funktion als Audio Transmitter, Receiver
+                                    oder Konverter einstellbar, je 2 Eingänge und Ausgänge 3.5 mm
+                                    Klinke analog und SPDIF Toslink digital
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <img
+                                        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                                        width="500"
+                                        height="500"
+                                        src="./img/BT_2_in_1.jpg"
+                                        alt=""
+                                />
+                            </div>
+                        </div>
+                        <hr class="featurette-divider"/>
+                    </div>
+                </div>
+                    <!-- FOOTER -->
+                    <footer class="container">
+                        <p class="float-end"><a href="#">Back to top</a></p>
+                        <p>
+                            &copy; 2017–2021 Company, Inc. &middot;
+                            <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+                        </p>
+                    </footer>
+</article>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.bundle.js"></script>
+<script src="./js/custom.js"></script>
+</body>
 </html>
